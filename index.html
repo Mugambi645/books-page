@@ -45,11 +45,15 @@
               font-size: 36px;
               margin-left: 50px;
             }
-            
+            .center {
+  text-align: center;
+  list-style-position: inside;
+}
             #main {
               transition: margin-left .5s;
               padding: 16px;
             }
+        
             
             @media screen and (max-height: 450px) {
               .sidenav {padding-top: 15px;}
@@ -61,18 +65,43 @@
                 <nav class="navbar navbar-dark bg-dark">
                     <span style="font-size:30px;cursor:pointer; background-color: white; margin-left: 2rem; border-radius: 10%;" onclick="openNav()">&#9776; </span>
                     </nav>
-            <div id="mySidenav" class="sidenav">
+            <div id="mySidenav" class="sidenav">                                                       
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#">Languages</a>
-              <a href="#">Employees</a>
-              <a href="#">Comparison</a>
-              <a href="#">Contact</a>
+              <a href="languages.html">Languages</a>
+              <a href="employee.html">Employees</a>
+              <a href="comparison.html">Comparison</a>
+              
             </div>
             <div class="text-center">
             <div id="main">
               <h2>My Book page</h2>
               <p>With online Books you can learn coding at your own free pace!
                   <br>
+                  </p>
+                  </div>
+                  </div>
+                  <hr>
+                  <!--header info-->
+                  <div class="container-fluid" style="text-align: center;">
+                      
+                  <h3>
+                      Web development languages we will learn
+                  </h3>
+                  <!--ordered list containing the languages we will learn-->
+                  <ol class="center">
+                      <li>Html - Hyper Text Markup Language</li>
+                      <li>Css - Cascading style sheets</li>
+                      <li>JavaScript</li>
+                      <li>Ajax</li>
+                      <li>PHP
+                        <ol> 
+                          <li>PHP 4.0</li> 
+                          <li>PHP 5.0</li> 
+                        </ol>
+                      </li>
+                      <li>MySQL Database</li>
+                      <li>XML</li>
+                  </ol>
               </p>
             </div>
             </div>
