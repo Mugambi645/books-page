@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
         <title>
 
         </title>
@@ -37,7 +41,12 @@
             .sidenav a:hover {
               color: #f1f1f1;
             }
-            
+            td {
+                margin: 3rem;
+                width: 100%;
+                height: 50px;
+                
+            }
             .sidenav .closebtn {
               position: absolute;
               top: 0;
@@ -45,7 +54,15 @@
               font-size: 36px;
               margin-left: 50px;
             }
-            .center {
+            .move-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.lineBorder td {
+border-bottom: 1px solid #9cf;
+} 
+
+.center {
   text-align: center;
   list-style-position: inside;
 }
@@ -53,8 +70,7 @@
               transition: margin-left .5s;
               padding: 16px;
             }
-        
-            
+
             @media screen and (max-height: 450px) {
               .sidenav {padding-top: 15px;}
               .sidenav a {font-size: 18px;}
@@ -75,37 +91,95 @@
             </div>
             <div class="text-center">
             <div id="main">
-              <h2>My Book page</h2>
-              <p>With online Books you can learn coding at your own free pace!
-                  <br>
-                  </p>
-                  </div>
-                  </div>
-                  <hr>
-                  <!--header info-->
-                  <div class="container-fluid" style="text-align: center;">
-                      
-                  <h3>
-                      Web development languages we will learn
-                  </h3>
-                  <!--ordered list containing the languages we will learn-->
-                  <ol class="center">
-                      <li>Html - Hyper Text Markup Language</li>
-                      <li>Css - Cascading style sheets</li>
-                      <li>JavaScript</li>
-                      <li>Ajax</li>
-                      <li>PHP
-                        <ol> 
-                          <li>PHP 4.0</li> 
-                          <li>PHP 5.0</li> 
-                        </ol>
-                      </li>
-                      <li>MySQL Database</li>
-                      <li>XML</li>
-                  </ol>
-              </p>
-            </div>
-            </div>
+              <hr style="margin-top: 5rem;">
+                <table class="move-center" style="margin-top: 0rem;" width="500px" cellpadding="6" aria-colspan="3" cellspacing="4" colspan="4">
+                    <tr style="font-size: 20px;" >
+                      <th></th>
+                      <th>Fluid 512</th>
+                      <th>Fluid 1024</th>
+                      <th>Fluid 2048</th>
+                      <th>Fluid 4096</th>
+                    </tr>
+                    <tr style="margin: 4rem;"  class="lineBorder">
+                      <td>RAM</td>
+                      <td>512MB</td>
+                      <td>1024MB</td>
+                      <td>2048MB</td>
+                      <td>4096MB</td>
+                    </tr>
+                <tr class="lineBorder">
+                  <td>Disk Space</td>
+                  <td>25GB</td>
+                  <td>50GB</td>
+                  <td>100GB</td>
+                  <td>200GB</td>
+                </tr>
+                    <tr   class="lineBorder">
+                      <td>CPU Cores</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>4</td>
+                      <td>6</td>
+                    </tr>
+                    <tr  class="lineBorder">
+                      <td>Swap</td>
+                      <td>512MB</td>
+                      <td>1024MB</td>
+                      <td>1024MB</td>
+                      <td>2048MB</td>
+                    </tr>
+                    <tr  class="lineBorder">
+                      <td>BandWidth</td>
+                      <td>200GB</td>
+                      <td>400GB</td>
+                      <td>800GB</td>
+                      <td>1600GB</td>
+                    </tr>
+                    <tr  class="lineBorder">
+                      <td>Monthly</td>
+                      <td>$16.95/month</td>
+                      <td>$32.95/month</td>
+                      <td>$64.95/month</td>
+                      <td>$124.95/month</td>
+                    </tr>
+                    <tr  class="lineBorder">
+                      <td>Quarterly</td>
+                      <td>$16.44/month</td>
+                      <td>$31.96/month</td>
+                      <td>$63.00/month</td>
+                      <td>$125.08/month</td>
+                    </tr>
+                    <tr  class="lineBorder">
+                      <td>Yearly</td>
+                      <td>$15.26/month</td>
+                      <td>$29.66/month</td>
+                      <td>$58.46/month</td>
+                      <td>$118.06/month</td>
+                    </tr>
+                    <tr  class="lineBorder">
+                      <td></td>
+                      <td>
+                        <div class="button" style="background-color: green; border-radius: 10%;">
+                          <i class="fas fa-shopping-cart" style="color: white; margin: 0rem;"></i>
+                        <input type="button" value="Order" placeholder="Order>>" style="background-color: green; display: contents">Order
+                      </td>
+                      <td>
+                        <div class="button" style="background-color: green; border-radius: 10%;">
+                          <i class="fas fa-shopping-cart" style="color: white; margin: 0rem;"></i>
+                        <input type="button" value="Order" placeholder="Order>>" style="background-color: green; display: contents">Order
+                      </td>
+                      <td>
+                        <div class="button" style="background-color: green; border-radius: 10%;">
+                          <i class="fas fa-shopping-cart" style="color: white; margin: 0rem;"></i>
+                        <input type="button" value="Order" placeholder="Order>>" style="background-color: green; display: contents">Order
+                      </td>
+                      <td>
+                        <div class="button" style="background-color: green; border-radius: 10%;">
+                          <i class="fas fa-shopping-cart" style="color: white; margin: 0rem;"></i>
+                        <input type="button" value="Order" placeholder="Order>>" style="background-color: green; display: contents">Order
+                      </td>
+                    </tr>
+                  </table>
             <script>
             function openNav() {
               document.getElementById("mySidenav").style.width = "250px";
